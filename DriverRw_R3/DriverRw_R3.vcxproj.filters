@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MFC源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MFC头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="功能源文件">
+      <UniqueIdentifier>{9728e08a-f5b2-46e0-bf9e-45c3eb81c39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="功能头文件">
+      <UniqueIdentifier>{8ac1b0ca-476c-4adc-bf70-08274a8faeb3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMainApp.cpp">
+      <Filter>MFC源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainDlg.cpp">
+      <Filter>MFC源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CMmRW.cpp">
+      <Filter>MFC源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CProcessPT.cpp">
+      <Filter>MFC源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InstallDriver.cpp">
+      <Filter>功能源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>功能源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InstallResource.cpp">
+      <Filter>功能源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>MFC头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainDlg.h">
+      <Filter>MFC头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CMmRW.h">
+      <Filter>MFC头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CProcessPT.h">
+      <Filter>MFC头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InstallDriver.h">
+      <Filter>功能头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>功能头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InstallResource.h">
+      <Filter>功能头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StructInfo.h">
+      <Filter>功能头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DriverRw_R3.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="q2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

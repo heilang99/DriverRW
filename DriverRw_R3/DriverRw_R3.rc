@@ -1,0 +1,187 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_Main DIALOGEX 0, 0, 449, 213
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nioce"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,3,1,354,209
+    PUSHBUTTON      "安装驱动",IDC_BUTTON_InDriver,372,20,63,21
+    PUSHBUTTON      "卸载驱动",IDC_BUTTON_UnDriver,372,54,63,21
+    LTEXT           "By:小鱼吃大鱼",IDC_STATIC,380,192,53,10
+END
+
+IDD_DIALOG_Mm DIALOGEX 0, 0, 330, 192
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_INFO,4,126,255,29,ES_MULTILINE | ES_UPPERCASE | ES_AUTOVSCROLL | WS_VSCROLL,WS_EX_LEFTSCROLLBAR
+    LTEXT           "提示信息：",IDC_STATIC,4,116,39,8
+    EDITTEXT        IDC_EDIT_PID,52,3,64,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "目标进程PID：",IDC_STATIC,3,5,49,10
+    EDITTEXT        IDC_EDIT_READADDR,48,35,71,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "锁定ID",IDC_BUTTON_GetPid,121,3,48,14
+    GROUPBOX        "功能    PID和大小为十进制",IDC_STATIC,4,21,255,94,0,WS_EX_STATICEDGE
+    LTEXT           "内存地址：",IDC_STATIC,9,36,38,13
+    EDITTEXT        IDC_EDIT_WRITEADDR,48,55,71,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "内存地址：",IDC_STATIC,9,56,38,10
+    PUSHBUTTON      "读",IDC_BUTTON_READ,123,35,26,13
+    PUSHBUTTON      "写整型",IDC_BUTTON_WRITE,123,54,26,14
+    LTEXT           "读取大小：",IDC_STATIC,150,39,39,13
+    EDITTEXT        IDC_EDIT_READSIZE,189,37,63,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "写入内容：",IDC_STATIC,150,58,38,9
+    EDITTEXT        IDC_EDIT_WRITECONTENT,189,56,63,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "内存地址：",IDC_STATIC,9,77,38,14
+    EDITTEXT        IDC_EDIT_WRITEADDR2,48,74,71,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "写字节集",IDC_BUTTON_WRITE2,123,73,36,14
+    EDITTEXT        IDC_EDIT_WRITECONTENT2,48,91,203,20,ES_MULTILINE | ES_UPPERCASE | ES_AUTOVSCROLL | WS_VSCROLL,WS_EX_LEFTSCROLLBAR
+    LTEXT           "ShellCode:",IDC_STATIC,10,96,36,9
+END
+
+IDD_DIALOG_PT DIALOGEX 0, 0, 314, 203
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CHILD | WS_SYSMENU
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "进程保护（全权限）",IDC_BUTTON_RAISEHANDLE,9,12,72,18
+    PUSHBUTTON      "抹掉DebugPort",IDC_BUTTON_REMOVEPORT,93,12,54,18
+    PUSHBUTTON      "修改对象头反调试",IDC_BUTTON_OBJECTHEADER,162,12,74,18
+    PUSHBUTTON      "还原进程保护",IDC_BUTTON_DECLINEHANDLE,9,47,72,18
+    PUSHBUTTON      "复原对象头",IDC_BUTTON_OBJECTHEADER2,162,46,74,18
+    EDITTEXT        IDC_EDIT1,47,80,69,16,ES_AUTOHSCROLL
+    LTEXT           "函数地址：",IDC_STATIC,9,82,38,10
+    EDITTEXT        IDC_EDIT2,49,118,51,14,ES_AUTOHSCROLL
+    LTEXT           "参数一：",IDC_STATIC,15,120,32,11
+    EDITTEXT        IDC_EDIT4,145,116,51,14,ES_AUTOHSCROLL
+    LTEXT           "参数二：",IDC_STATIC,111,119,30,11
+    EDITTEXT        IDC_EDIT5,49,135,51,14,ES_AUTOHSCROLL
+    LTEXT           "参数三：",IDC_STATIC,15,137,30,11
+    EDITTEXT        IDC_EDIT6,145,136,51,14,ES_AUTOHSCROLL
+    LTEXT           "参数四：",IDC_STATIC,111,138,30,11
+    PUSHBUTTON      "调用",IDC_BUTTON1,123,80,43,13
+    EDITTEXT        IDC_EDIT7,48,99,32,14,ES_AUTOHSCROLL
+    LTEXT           "参数个数：",IDC_STATIC,9,101,38,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_Main, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_DIALOG_Mm, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_PT, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_Main AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_Mm AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "D:\\项目\\自己写的项目\\项目\\驱动读写项目\\DriverRw_R3\\q2.ico"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
